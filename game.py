@@ -9,13 +9,13 @@ width, height = 640, 480
 healthvalue=200
 
 pygame.init()
-pygame.start() <<< new
 screen=pygame.display.set_mode((width, height))
 keys =[False, False, False, False]
 
 acc=[0,0]
 arrows=[]
 arr.test()
+arr.test.tostring()
 badtimer=100
 badtimer1=0
 badguys=[[640,100]]
