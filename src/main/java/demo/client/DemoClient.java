@@ -22,7 +22,8 @@ public class DemoClient
     @Path("helloWorldText")
     public Response consumeHelloWorld() {
 
-        WebTarget helloWorld = client.target("http://localhost:18181");
+        WebTarget helloWorld = client.target("http://localhost:18181")
+                .path("helloWorld").path("simpleTextString");
         Invocation.Builder invocationBuilder =
                 helloWorld.request(MediaType.TEXT_PLAIN);
         Response response = invocationBuilder.get();
